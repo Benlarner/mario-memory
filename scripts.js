@@ -5,11 +5,16 @@ let hasFlippedCard = false;
 let firstCard, secondCard;
 
 // play button audio
+const links = document.querySelectorAll('.play-button');
 let jumpSound = document.getElementById('jump-audio');
-let playButton = document.getElementById('play-button')
+let marioSound = document.getElementById('mario');
 
 // play sound function
 function play(){
+    marioSound.play();
+}
+
+function playCardSound(){
     jumpSound.play();
 }
 
@@ -61,5 +66,7 @@ function unflipCards(){
 }
 
 cards.forEach(card => card.addEventListener('click', flipCard));
-cards.forEach(card => card.addEventListener('click', play));
-playButton.addEventListener('click', play);
+cards.forEach(card => card.addEventListener('click', playCardSound));
+links.forEach(link => link.addEventListener('click', play))
+
+

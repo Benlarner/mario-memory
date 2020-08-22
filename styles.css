@@ -7,10 +7,18 @@
 
 .game {
   height: 100vh;
-  background-image: url(/img/dungeon.jpg);
+  background-image: url(/img/bowserscastle.jpg);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+#easy-game {
+  background-image: url(/img/easybackground.jpg);
+}
+
+#medium-game {
+  background-image: url(/img/dungeon.jpg);
 }
 
 .homepage {
@@ -35,6 +43,31 @@ iframe {
   height: 1px;
   width: 1px;
   visibility: hidden;
+}
+
+.character-container {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-bowser {
+  height: 50vh;
+}
+
+.main-boo {
+  height: 50vh;
+}
+
+.main-goomba {
+  height: 50vh;
 }
 
 .memory-game {
