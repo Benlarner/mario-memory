@@ -8,6 +8,8 @@ let firstCard, secondCard;
 const links = document.querySelectorAll('.play-button');
 let jumpSound = document.getElementById('jump-audio');
 let marioSound = document.getElementById('mario');
+const wrong = document.getElementById('wrong');
+const correct = document.getElementById('correct');
 
 // play sound function
 function play(){
@@ -17,6 +19,7 @@ function play(){
 function playCardSound(){
     jumpSound.play();
 }
+
 
 function createTimedLink(element, callback, timeout){
     setTimeout( function(){callback(element);}, timeout);
@@ -56,13 +59,20 @@ function checkForMatch(){
 function disableCards(){
     firstCard.removeEventListener('click', flipCard)
     secondCard.removeEventListener('click', flipCard)
+    setTimeout(() => {
+        correct.play();
+    }, 700)
 }
 
 function unflipCards(){
     setTimeout(() => {
         firstCard.classList.remove('flip');
         secondCard.classList.remove('flip');
-    }, 1500)
+    }, 1000);
+    setTimeout(() => {
+        wrong.play();
+    }, 1000)
+    
 }
 
 cards.forEach(card => card.addEventListener('click', flipCard));
