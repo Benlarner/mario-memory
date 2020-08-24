@@ -82,6 +82,7 @@
 }
 
 a{
+    cursor: pointer;
     text-decoration: unset;
     font-size: 40px;
     color: $red;
@@ -183,6 +184,7 @@ a{
 }
 
 .memory-card{
+    cursor: pointer;
     width: calc(25% - 10px);
     height: calc(33.333% - 10px);
     margin: 5px;
