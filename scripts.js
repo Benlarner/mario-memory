@@ -15,6 +15,7 @@ let jumpSound = document.getElementById('jump-audio');
 let marioSound = document.getElementById('mario');
 const wrong = document.getElementById('wrong');
 const correct = document.getElementById('correct');
+const music = document.getElementById('music');
 
 
 
@@ -98,8 +99,6 @@ function unflipCards(){
 cards.forEach(card => card.addEventListener('click', flipCard));
 cards.forEach(card => card.addEventListener('click', playCardSound));
 links.forEach(link => link.addEventListener('click', play))
-playBoo('mouseenter');
-
 
 
 
