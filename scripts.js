@@ -16,6 +16,8 @@ let marioSound = document.getElementById('mario');
 const wrong = document.getElementById('wrong');
 const correct = document.getElementById('correct');
 
+
+
 // play sound function
 function play(){
     marioSound.play();
@@ -84,10 +86,21 @@ function unflipCards(){
     
 }
 
+(function shuffle(){
+    cards.forEach(card => {
+        let randomPos = Math.floor(Math.random() * cards.length);
+        card.style.order = randomPos;
+    });
+})();
+
+
 // event listeners
 cards.forEach(card => card.addEventListener('click', flipCard));
 cards.forEach(card => card.addEventListener('click', playCardSound));
 links.forEach(link => link.addEventListener('click', play))
 playBoo('mouseenter');
+
+
+
 
 
