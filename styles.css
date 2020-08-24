@@ -16,6 +16,12 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media only screen and (max-width: 768px) {
@@ -29,12 +35,6 @@
 
 #easy-game {
   background-image: url(/img/easybackground.jpg);
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 #medium-game {
@@ -161,8 +161,34 @@ a {
   height: 50vh;
 }
 
+@media only screen and (max-width: 1200px) {
+  #main-bowser {
+    height: 30vh;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #main-bowser {
+    height: 20vh;
+    margin-top: 5rem;
+  }
+}
+
 #main-boo {
   height: 50vh;
+}
+
+@media only screen and (max-width: 1200px) {
+  #main-boo {
+    height: 30vh;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #main-boo {
+    height: 20vh;
+    margin-top: 5rem;
+  }
 }
 
 #main-goomba {
@@ -178,7 +204,7 @@ a {
 @media only screen and (max-width: 768px) {
   #main-goomba {
     height: 20vh;
-    margin-top: 3rem;
+    margin-top: 5rem;
   }
 }
 
