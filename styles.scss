@@ -167,6 +167,8 @@ a{
     margin: auto; 
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     perspective: 1000px;
 
     @include tablet{
