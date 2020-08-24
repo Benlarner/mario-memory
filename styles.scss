@@ -12,12 +12,18 @@
     height: 100vh;
     background-image: url(/img/bowserscastle.jpg);
     display: flex;
+
+    @include mobile {
+        flex-direction: column;
+    }
 }
 
 
 
 #easy-game{
     background-image: url(/img/easybackground.jpg);
+    justify-content: center;
+    align-items: center;
 }
 
 #medium-game{
@@ -124,6 +130,15 @@ a{
 
 #main-goomba{
     height: 50vh;
+
+    @include tablet{
+        height: 30vh;
+    }
+
+    @include mobile{
+        height: 20vh;
+        margin-top: 3rem;
+    }
 }
 
 
@@ -135,6 +150,16 @@ a{
     display: flex;
     flex-wrap: wrap;
     perspective: 1000px;
+
+    @include tablet{
+        width: 500px;
+        height: 500px;
+    }
+
+    @include mobile{
+        width: 350px;
+        height: 350px;
+    }
 }
 
 .memory-card{

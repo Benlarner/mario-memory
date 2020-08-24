@@ -18,8 +18,23 @@
   display: flex;
 }
 
+@media only screen and (max-width: 768px) {
+  .game {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 #easy-game {
   background-image: url(/img/easybackground.jpg);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #medium-game {
@@ -154,6 +169,19 @@ a {
   height: 50vh;
 }
 
+@media only screen and (max-width: 1200px) {
+  #main-goomba {
+    height: 30vh;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #main-goomba {
+    height: 20vh;
+    margin-top: 3rem;
+  }
+}
+
 .memory-game {
   width: 800px;
   height: 800px;
@@ -165,6 +193,20 @@ a {
       flex-wrap: wrap;
   -webkit-perspective: 1000px;
           perspective: 1000px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .memory-game {
+    width: 500px;
+    height: 500px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .memory-game {
+    width: 350px;
+    height: 350px;
+  }
 }
 
 .memory-card {
