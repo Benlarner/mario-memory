@@ -1,4 +1,5 @@
-@import "/abstracts/partials.scss";
+
+@import './abstracts/partials.scss';
 
 * {
     padding: 0;
@@ -30,17 +31,49 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url(./img/home.jpg);
-    font-family: $font-reg;
+    background-image: linear-gradient(rgba(#323232, 0.5),rgba(#323232, 0.5)),url(./img/home.jpg); 
+    font-family: $norm-font;
+    font-size: 2.3rem ;
+
+
+    &__difficulties{
+        height: 20vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    &__wrd-1{
+        color: $red;
+    }
+
+    &__wrd-2{
+        color: $blue;
+    }
+
+    &__wrd-3{
+        color: $yellow;
+    }
+
+    &__wrd-4{
+        color: $green;
+    }
+
+    &__wrd-5{
+        color: $red;
+    }
+
+
 }
 
 a{
     text-decoration: unset;
     font-size: 40px;
+    color: $red;
 }
 
 .opening-title{
-
+    margin-bottom: 20px;
 }
 
 
@@ -59,15 +92,15 @@ iframe{
     align-items: center;
 }
 
-.main-bowser{
+#main-bowser{
     height: 50vh;
 }
 
-.main-boo{
+#main-boo{
     height: 50vh;
 }
 
-.main-goomba{
+#main-goomba{
     height: 50vh;
 }
 

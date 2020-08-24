@@ -7,14 +7,15 @@
     <link rel="stylesheet" href="/styles.css">
 </head>
 <body class = "homepage">
-    <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay"  src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/20664929&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-    <h1 class = "opening-title">Help save Mario and his friends!</h1>
+    <audio src="./sounds/maintheme.mp3" autoplay loop></audio>
+    <h1 class = "opening-title"> <span class = 'homepage__wrd-1'>Help</span> <span class = 'homepage__wrd-2'>save</span> <span class = 'homepage__wrd-3'>Mario</span> <span class = 'homepage__wrd-4'>and</span> <span class = 'homepage__wrd-5'>his</span> friends!</h1>
     <audio id = "mario" src="./sounds/Mario - Here We Go.mp3">
     </audio>
-
-    <a onclick="return createTimedLink(this, myFunction, 2000);" class = "play-button" href="/pages/easy.html">Easy</a>
-    <a onclick="return createTimedLink(this, myFunction, 2000);" class = "play-button" href="/pages/medium.html">Medium</a>
-    <a onclick="return createTimedLink(this, myFunction, 2000);" class = "play-button" href="/pages/hard.html">Hard</a>
+    <div class = "homepage__difficulties">
+        <a onclick="return createTimedLink(this, myFunction, 2000);" class = "play-button" href="/pages/easy.html">Easy</a>
+        <a onclick="return createTimedLink(this, myFunction, 2000);" class = "play-button" href="/pages/medium.html">Medium</a>
+        <a onclick="return createTimedLink(this, myFunction, 2000);" class = "play-button" href="/pages/hard.html">Hard</a>
+    </div>
 
     <script src="./scripts.js"></script>
 </body>

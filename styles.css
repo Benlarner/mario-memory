@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "glori-reg";
+  src: url(../fonts/GloriaHallelujah-Regular.ttf);
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -36,12 +41,53 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: url(./img/home.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(50, 50, 50, 0.5)), to(rgba(50, 50, 50, 0.5))), url(./img/home.jpg);
+  background-image: linear-gradient(rgba(50, 50, 50, 0.5), rgba(50, 50, 50, 0.5)), url(./img/home.jpg);
+  font-family: "glori-reg";
+  font-size: 2.3rem;
+}
+
+.homepage__difficulties {
+  height: 20vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.homepage__wrd-1 {
+  color: #e52521;
+}
+
+.homepage__wrd-2 {
+  color: #049cd8;
+}
+
+.homepage__wrd-3 {
+  color: #fbd000;
+}
+
+.homepage__wrd-4 {
+  color: #43b047;
+}
+
+.homepage__wrd-5 {
+  color: #e52521;
 }
 
 a {
   text-decoration: unset;
   font-size: 40px;
+  color: #e52521;
+}
+
+.opening-title {
+  margin-bottom: 20px;
 }
 
 iframe {
@@ -63,15 +109,15 @@ iframe {
           align-items: center;
 }
 
-.main-bowser {
+#main-bowser {
   height: 50vh;
 }
 
-.main-boo {
+#main-boo {
   height: 50vh;
 }
 
-.main-goomba {
+#main-goomba {
   height: 50vh;
 }
 

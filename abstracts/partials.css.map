@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "mappings": "AEEA,UAAU;EACN,WAAW,EAHH,WAAW;EAInB,GAAG,EAAE,0CAA0C",
+    "sources": [
+        "partials.scss",
+        "_mixins.scss",
+        "_typography.scss",
+        "_variables.scss"
+    ],
+    "names": [],
+    "file": "partials.css"
+}

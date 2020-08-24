@@ -4,7 +4,12 @@ const cards = document.querySelectorAll('.memory-card');
 let hasFlippedCard = false;
 let firstCard, secondCard;
 
-// play button audio
+// image variables
+const boo = document.getElementById('main-boo');
+const bowser = document.getElementById('main-bowser');
+const goomba = document.getElementById('main-goomba');
+
+//  audio
 const links = document.querySelectorAll('.play-button');
 let jumpSound = document.getElementById('jump-audio');
 let marioSound = document.getElementById('mario');
@@ -21,6 +26,8 @@ function playCardSound(){
 }
 
 
+
+// load page delay
 function createTimedLink(element, callback, timeout){
     setTimeout( function(){callback(element);}, timeout);
     return false;
@@ -56,6 +63,7 @@ function checkForMatch(){
     }
 }
 
+// disable flip function
 function disableCards(){
     firstCard.removeEventListener('click', flipCard)
     secondCard.removeEventListener('click', flipCard)
@@ -64,6 +72,7 @@ function disableCards(){
     }, 700)
 }
 
+// flip cards back
 function unflipCards(){
     setTimeout(() => {
         firstCard.classList.remove('flip');
@@ -75,8 +84,10 @@ function unflipCards(){
     
 }
 
+// event listeners
 cards.forEach(card => card.addEventListener('click', flipCard));
 cards.forEach(card => card.addEventListener('click', playCardSound));
 links.forEach(link => link.addEventListener('click', play))
+playBoo('mouseenter');
 
 
