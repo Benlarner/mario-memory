@@ -31,6 +31,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -44,7 +46,19 @@
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(50, 50, 50, 0.5)), to(rgba(50, 50, 50, 0.5))), url(./img/home.jpg);
   background-image: linear-gradient(rgba(50, 50, 50, 0.5), rgba(50, 50, 50, 0.5)), url(./img/home.jpg);
   font-family: "glori-reg";
-  font-size: 2.3rem;
+  margin: 0 6rem 0 6rem;
+}
+
+@media only screen and (max-width: 1200px) {
+  .homepage {
+    margin: 0 4rem 0 4rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .homepage {
+    margin: 0 1rem 0 1rem;
+  }
 }
 
 .homepage__difficulties {
@@ -86,14 +100,33 @@ a {
   color: #e52521;
 }
 
-.opening-title {
-  margin-bottom: 20px;
+@media only screen and (max-width: 1200px) {
+  a {
+    font-size: 1.6rem;
+  }
 }
 
-iframe {
-  height: 1px;
-  width: 1px;
-  visibility: hidden;
+@media only screen and (max-width: 768px) {
+  a {
+    font-size: 1.2rem;
+  }
+}
+
+.opening-title {
+  margin-bottom: 3rem;
+  font-size: 3rem;
+}
+
+@media only screen and (max-width: 1200px) {
+  .opening-title {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .opening-title {
+    font-size: 1.5rem;
+  }
 }
 
 .character-container {
