@@ -88,7 +88,7 @@ function disableCards(){
     secondCard.removeEventListener('click', flipCard)
     setTimeout(() => {
         correct.play();
-    }, 700)
+    }, 100)
 }
 
 // flip cards back
@@ -102,7 +102,7 @@ function unflipCards(){
     }, 1000);
     setTimeout(() => {
         wrong.play();
-    }, 1000)
+    }, 500)
     
 }
 

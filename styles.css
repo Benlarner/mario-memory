@@ -53,11 +53,15 @@ button:focus {
 
 .game-button {
   margin-right: 1rem;
+  margin-left: 3rem;
 }
 
 @media only screen and (max-width: 768px) {
   .game-button {
-    margin-bottom: 2rem;
+    height: 80px;
+    min-width: 80px;
+    margin-top: 2rem;
+    margin-left: 3rem;
   }
 }
 
@@ -179,7 +183,7 @@ a {
 }
 
 .character-container {
-  width: 30%;
+  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -263,8 +267,8 @@ a {
 
 @media only screen and (max-width: 1200px) {
   .memory-game {
-    width: 500px;
-    height: 500px;
+    min-width: 450px;
+    min-height: 450px;
   }
 }
 

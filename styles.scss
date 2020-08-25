@@ -37,9 +37,13 @@ button:focus {outline:0;};
 
 .game-button{
     margin-right: 1rem;
+    margin-left: 3rem;
     
     @include mobile{
-        margin-bottom: 2rem;
+        height: 80px;
+        min-width: 80px;
+        margin-top: 2rem;
+        margin-left: 3rem;
     }
 }
 
@@ -149,7 +153,7 @@ a{
 
 // Main character images
 .character-container{
-    width: 30%;
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -195,7 +199,7 @@ a{
 }
 
 
-
+// main game styles
 .memory-game{
     width: 800px;
     height: 800px;
@@ -207,8 +211,8 @@ a{
     perspective: 1000px;
 
     @include tablet{
-        width: 500px;
-        height: 500px;
+        min-width: 450px;
+        min-height: 450px;
     }
 
     @include mobile{
@@ -261,4 +265,8 @@ a{
 
 .front-face{
     transform: rotateY(180deg);
+}
+
+#game-complete{
+    
 }
