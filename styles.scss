@@ -33,17 +33,15 @@ button{
     color: $black;
 }
 
-.easy-button{
+.game-button{
     margin-right: 1rem;
+    
+    @include mobile{
+        margin-bottom: 2rem;
+    }
 }
 
-.medium-button{
-    margin-right: 1rem;
-}
 
-.hard-button{
-    margin-right: 1rem;
-}
 
 // end of sound button properties
 
@@ -108,10 +106,8 @@ button{
     }
 
     &__buttons{
-        width: 50%;
-        justify-content: center;
-        justify-content: space-around;
-
+        margin-right: 2.5rem;
+        margin-top: 3rem;
     }
 
 

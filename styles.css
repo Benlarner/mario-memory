@@ -47,16 +47,14 @@ button {
   color: #000000;
 }
 
-.easy-button {
+.game-button {
   margin-right: 1rem;
 }
 
-.medium-button {
-  margin-right: 1rem;
-}
-
-.hard-button {
-  margin-right: 1rem;
+@media only screen and (max-width: 768px) {
+  .game-button {
+    margin-bottom: 2rem;
+  }
 }
 
 #easy-game {
@@ -136,12 +134,8 @@ button {
 }
 
 .homepage__buttons {
-  width: 50%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  margin-right: 2.5rem;
+  margin-top: 3rem;
 }
 
 a {
