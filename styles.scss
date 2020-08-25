@@ -203,9 +203,6 @@ a{
     width: 10%;
     height: 15%;
 
-    @include mobile{
-        width: 15%;
-    }
 }
 
 .memory-card:active {
