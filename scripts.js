@@ -18,7 +18,7 @@ const correct = document.getElementById('correct');
 const music = document.getElementById('music');
 const soundButton = document.getElementById('sound-button');
 const muteButton = document.getElementById('mute-button')
-
+const booLaugh = document.getElementById('boo-laugh');
 
 
 // play sound function
@@ -30,6 +30,8 @@ function playCardSound(){
     jumpSound.play();
 }
 
+// mute/unmute function
+
 soundButton.onclick = function () {
     if (music.muted){
         music.muted = false;
@@ -39,8 +41,6 @@ soundButton.onclick = function () {
         soundButton.innerText = 'SOUND ON';
     }
 }
-
-
 
 
 
