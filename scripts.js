@@ -16,6 +16,8 @@ let marioSound = document.getElementById('mario');
 const wrong = document.getElementById('wrong');
 const correct = document.getElementById('correct');
 const music = document.getElementById('music');
+const soundButton = document.getElementById('sound-button');
+const muteButton = document.getElementById('mute-button')
 
 
 
@@ -27,6 +29,18 @@ function play(){
 function playCardSound(){
     jumpSound.play();
 }
+
+soundButton.onclick = function () {
+    if (music.muted){
+        music.muted = false;
+        soundButton.innerText = 'SOUND OFF';
+    } else {
+        music.muted = true;
+        soundButton.innerText = 'SOUND ON';
+    }
+}
+
+
 
 
 

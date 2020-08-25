@@ -14,13 +14,40 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    justify-content: space-between;
 
     @include mobile {
         flex-direction: column;
     }
 }
 
+// sound button properties
+button{
+    font-family: $norm-font;
+    background-color: transparent;
+    height: 70px;
+    width: 70px;
+    border-radius: 100%;
+    font-size: 1.1rem;
+    background-color: $yellow;
+    color: $black;
+}
 
+.easy-button{
+    margin-right: 1rem;
+}
+
+.medium-button{
+    margin-right: 1rem;
+}
+
+.hard-button{
+    margin-right: 1rem;
+}
+
+// end of sound button properties
+
+// game background images
 
 #easy-game{
     background-image: url(/img/easybackground.jpg);
@@ -29,6 +56,8 @@
 #medium-game{
     background-image: url(/img/dungeon.jpg);
 }
+
+// end of game background images
 
 // Homepage styles
 .homepage{
@@ -76,6 +105,13 @@
 
     &__wrd-5{
         color: $red;
+    }
+
+    &__buttons{
+        width: 50%;
+        justify-content: center;
+        justify-content: space-around;
+
     }
 
 
