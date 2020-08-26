@@ -25,6 +25,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: relative;
 }
 
 @media only screen and (max-width: 768px) {
@@ -333,5 +334,29 @@ a {
 .front-face {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
+}
+
+.counter-container {
+  font-family: "glori-reg";
+  font-size: 2rem;
+  color: #e52521;
+  border: solid 2px #fbd000;
+  background-color: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  margin: 4rem;
+  width: 180px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+@media only screen and (max-width: 768px) {
+  .counter-container {
+    position: unset;
+    margin: unset;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

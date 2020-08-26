@@ -15,6 +15,7 @@
     justify-content: center;
     align-items: center;
     justify-content: space-between;
+    position: relative;
 
     @include mobile {
         flex-direction: column;
@@ -265,6 +266,26 @@ a{
 
 .front-face{
     transform: rotateY(180deg);
+}
+
+.counter-container{
+    font-family: $norm-font;
+    font-size: 2rem;
+    color: $red;
+    border: solid 2px $yellow;
+    background-color: $black;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    margin: 4rem;
+    width: 180px;
+    justify-content: space-around;
+
+    @include mobile{
+        position: unset;
+        margin: unset;
+    }
+
 }
 
 #game-complete{

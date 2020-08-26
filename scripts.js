@@ -21,6 +21,10 @@ const soundButton = document.getElementById('sound-button');
 const muteButton = document.getElementById('mute-button')
 const booLaugh = document.getElementById('boo-laugh');
 
+// Move counter
+const counter = document.getElementById('counter');
+let moves = 0;
+
 
 // play sound function
 function play(){
@@ -82,12 +86,20 @@ function checkForMatch(){
     }
 }
 
+// Move counter
+
+function moveCounter(){      
+    moves ++;
+    counter.innerHTML = moves;
+}
+
 // disable flip function
 function disableCards(){
     firstCard.removeEventListener('click', flipCard)
     secondCard.removeEventListener('click', flipCard)
     setTimeout(() => {
         correct.play();
+        moveCounter();
     }, 100)
 }
 
@@ -102,6 +114,7 @@ function unflipCards(){
     }, 1000);
     setTimeout(() => {
         wrong.play();
+        moveCounter();
     }, 500)
     
 }
