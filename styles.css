@@ -10,11 +10,6 @@
           box-sizing: border-box;
 }
 
-body {
-  width: 100vw;
-  height: 100vh;
-}
-
 .game {
   height: 100vh;
   background-image: url(/img/bowserscastle.jpg);
@@ -40,14 +35,6 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-}
-
-#modal {
-  position: absolute;
-  width: 600px;
-  height: 600px;
-  background-color: white;
-  right: 500px;
 }
 
 button {
