@@ -37,6 +37,14 @@
   }
 }
 
+#modal {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background-color: white;
+  right: 500px;
+}
+
 button {
   font-family: "glori-reg";
   background-color: transparent;

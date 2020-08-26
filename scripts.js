@@ -63,13 +63,13 @@ function myFunction(element) {
 // flip card function
 function flipCard(){
     if(cardLock) return;
+    if(this === firstCard) return;
     this.classList.toggle('flip');
 
     if(!hasFlippedCard){
         hasFlippedCard = true;
         firstCard = this;
     } else {
-        hasFlippedCard =false;
         secondCard = this;
 
         checkForMatch();
@@ -97,6 +97,7 @@ function moveCounter(){
 function disableCards(){
     firstCard.removeEventListener('click', flipCard)
     secondCard.removeEventListener('click', flipCard)
+    resetBoard();
     setTimeout(() => {
         correct.play();
         moveCounter();
@@ -110,7 +111,7 @@ function unflipCards(){
     setTimeout(() => {
         firstCard.classList.remove('flip');
         secondCard.classList.remove('flip');
-        cardLock = false;
+        resetBoard();
     }, 1000);
     setTimeout(() => {
         wrong.play();
@@ -119,6 +120,14 @@ function unflipCards(){
     
 }
 
+// stop the same card from being able to match
+function resetBoard() {
+    [hasFlippedCard, cardLock] = [false, false];
+    [firstCard, secondCard] = [null, null];
+}
+
+
+// Shuffle cards on load
 (function shuffle(){
     cards.forEach(card => {
         let randomPos = Math.floor(Math.random() * cards.length);
