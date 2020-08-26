@@ -35,13 +35,14 @@
 button{
     font-family: $norm-font;
     background-color: transparent;
-    height: 70px;
-    width: 70px;
+    height: 80px;
+    width: 80px;
     border-radius: 100%;
     font-size: 1.1rem;
     background-color: $yellow;
     color: $black;
 }
+
 
 button:focus {outline:0;};
 

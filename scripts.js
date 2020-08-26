@@ -40,10 +40,10 @@ function playCardSound(){
 soundButton.onclick = function () {
     if (music.muted){
         music.muted = false;
-        soundButton.innerText = 'SOUND OFF';
+        soundButton.innerText = 'MUSIC OFF';
     } else {
         music.muted = true;
-        soundButton.innerText = 'SOUND ON';
+        soundButton.innerText = 'MUSIC ON';
     }
 }
 
