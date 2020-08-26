@@ -22,6 +22,15 @@
     }
 }
 
+#modal{
+    display: none;
+    position: absolute;
+    background-color: white;
+    width: 300px;
+    height: 300px;
+    right: 500px;
+}
+
 // sound button properties
 button{
     font-family: $norm-font;
@@ -117,7 +126,16 @@ button:focus {outline:0;};
         margin-top: 3rem;
     }
 
-
+    &__description{
+        color: $blue;
+        margin-top: 2rem;
+        height: fit-content;
+        border: 2px solid $green;
+        background-color: $yellow;
+        padding: 5px;
+        max-width: 400px;
+        border-radius: 10px;
+    }
 }
 
 a{
@@ -268,6 +286,7 @@ a{
     transform: rotateY(180deg);
 }
 
+
 .counter-container{
     font-family: $norm-font;
     font-size: 2rem;
@@ -286,8 +305,4 @@ a{
         margin: unset;
     }
 
-}
-
-#game-complete{
-    
 }
