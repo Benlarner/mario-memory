@@ -3,7 +3,7 @@
 const cards = document.querySelectorAll('.memory-card');
 let hasFlippedCard = false;
 let firstCard, secondCard;
-let lockBoard = false;
+let cardLock = false;
 
 // image variables
 const boo = document.getElementById('main-boo');
@@ -58,7 +58,7 @@ function myFunction(element) {
 
 // flip card function
 function flipCard(){
-    if(lockBoard) return;
+    if(cardLock) return;
     this.classList.toggle('flip');
 
     if(!hasFlippedCard){
@@ -94,11 +94,11 @@ function disableCards(){
 // flip cards back
 function unflipCards(){
 
-    lockBoard = true
+    cardLock = true;
     setTimeout(() => {
         firstCard.classList.remove('flip');
         secondCard.classList.remove('flip');
-        lockBoard = false;
+        cardLock = false;
     }, 1000);
     setTimeout(() => {
         wrong.play();
