@@ -38,7 +38,6 @@
 }
 
 #modal {
-  display: none;
   position: absolute;
   background-color: white;
   width: 80%;
@@ -48,6 +47,14 @@
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(50, 50, 50, 0.5)), to(rgba(50, 50, 50, 0.5))), url("./img/mariofinish.jpeg");
   background-image: linear-gradient(rgba(50, 50, 50, 0.5), rgba(50, 50, 50, 0.5)), url("./img/mariofinish.jpeg");
   background-size: cover;
+}
+
+@media only screen and (max-width: 768px) {
+  #modal {
+    right: unset;
+    left: 4rem;
+    top: 4rem;
+  }
 }
 
 button {

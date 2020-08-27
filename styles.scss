@@ -23,7 +23,7 @@
 }
 
 #modal{
-    display: none;
+    // display: none;
     position: absolute;
     background-color: white;
     width: 80%;
@@ -32,6 +32,12 @@
     z-index: 2;
     background-image: linear-gradient(rgba(#323232, 0.5),rgba(#323232, 0.5)),url("./img/mariofinish.jpeg");
     background-size: cover;
+
+    @include mobile{
+        right: unset;
+        left: 4rem;
+        top: 4rem;
+    }
 }
 
 // sound button properties
