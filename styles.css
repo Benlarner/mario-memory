@@ -38,16 +38,25 @@
 }
 
 #modal {
-  display: none;
   position: absolute;
   background-color: white;
   width: 80%;
   height: 80%;
-  right: 5rem;
+  right: 12rem;
   z-index: 2;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(50, 50, 50, 0.5)), to(rgba(50, 50, 50, 0.5))), url("./img/mariofinish.jpeg");
   background-image: linear-gradient(rgba(50, 50, 50, 0.5), rgba(50, 50, 50, 0.5)), url("./img/mariofinish.jpeg");
   background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1000px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -56,6 +65,11 @@
     left: 4rem;
     top: 4rem;
   }
+}
+
+.final-mod {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(50, 50, 50, 0.5)), to(rgba(50, 50, 50, 0.5))), url("https://media.giphy.com/media/aX0RqLt2ARSW4/source.gif") !important;
+  background-image: linear-gradient(rgba(50, 50, 50, 0.5), rgba(50, 50, 50, 0.5)), url("https://media.giphy.com/media/aX0RqLt2ARSW4/source.gif") !important;
 }
 
 button {
@@ -392,6 +406,22 @@ a {
   .counter-container {
     position: unset;
     margin: unset;
+  }
+}
+
+.back-button {
+  color: #fbd000;
+  font-family: "glori-reg";
+  position: absolute;
+  top: 0;
+  margin: 4rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .back-button {
+    position: unset;
+    margin: unset;
+    padding-top: 1rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */

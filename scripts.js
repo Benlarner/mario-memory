@@ -26,9 +26,16 @@ const modal = document.getElementById('modal');
 const counter = document.getElementById('counter');
 let moves = 0;
 
+// Finished moves
+let finishedMoves = document.getElementById('finished-moves');
+
+
 // Correct counter
 
 let correctCounter = 0;
+
+// anchor tags in modal
+let levelPick = document.getElementById('level-picker');
 
 
 // play sound function
@@ -110,6 +117,7 @@ function disableCards(){
         moveCounter();
         trigModal();
     }, 100)
+    
 }
 
 // flip cards back
@@ -131,6 +139,10 @@ function unflipCards(){
 function trigModal(){
     if (correctCounter === cards.length / 2){
         modal.style.display = "unset";
+        modal.style.display = "flex";
+        finishedMoves.innerText = `You completed the game in ${moves} moves!`;
+    } else {
+        modal.style.display = "none";
     }
 }
 
@@ -152,12 +164,11 @@ function resetBoard() {
     });
 })();
 
-
 // event listeners
 cards.forEach(card => card.addEventListener('click', flipCard));
 cards.forEach(card => card.addEventListener('click', playCardSound));
-links.forEach(link => link.addEventListener('click', play))
-
+links.forEach(link => link.addEventListener('click', play));
+trigModal();
 
 
 

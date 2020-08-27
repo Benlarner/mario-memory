@@ -23,21 +23,28 @@
 }
 
 #modal{
-    display: none;
     position: absolute;
     background-color: white;
     width: 80%;
     height: 80%;
-    right: 5rem;
+    right: 12rem;
     z-index: 2;
     background-image: linear-gradient(rgba(#323232, 0.5),rgba(#323232, 0.5)),url("./img/mariofinish.jpeg");
     background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
 
     @include mobile{
         right: unset;
         left: 4rem;
         top: 4rem;
     }
+}
+
+.final-mod{
+    background-image: linear-gradient(rgba(#323232, 0.5),rgba(#323232, 0.5)),url("https://media.giphy.com/media/aX0RqLt2ARSW4/source.gif") !important;
 }
 
 // sound button properties
@@ -316,4 +323,18 @@ a{
         margin: unset;
     }
 
+}
+
+.back-button{
+    color: $yellow;
+    font-family: $norm-font;
+    position: absolute;
+    top: 0;
+    margin: 4rem;
+
+    @include mobile{
+        position: unset;
+        margin: unset;
+        padding-top: 1rem;
+    }
 }
