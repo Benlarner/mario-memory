@@ -53,8 +53,14 @@ soundButton.onclick = function () {
     if (music.muted){
         music.muted = false;
         soundButton.innerText = 'MUSIC OFF';
+        jumpSound.muted = false;
+        wrong.muted = false;
+        correct.muted = false;
     } else {
         music.muted = true;
+        jumpSound.muted = true;
+        wrong.muted = true;
+        correct.muted = true;
         soundButton.innerText = 'MUSIC ON';
     }
 }
