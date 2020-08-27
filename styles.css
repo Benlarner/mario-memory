@@ -26,7 +26,6 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: relative;
-  padding: 2rem;
 }
 
 @media only screen and (max-width: 768px) {
@@ -373,6 +372,7 @@ a {
   .memory-game {
     min-width: 450px;
     min-height: 450px;
+    padding: 1rem;
   }
 }
 
@@ -460,6 +460,7 @@ a {
   .counter-container {
     position: unset;
     margin: unset;
+    margin-bottom: 1rem;
   }
 }
 

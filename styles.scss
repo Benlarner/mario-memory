@@ -16,7 +16,6 @@
     align-items: center;
     justify-content: space-between;
     position: relative;
-    padding: 2rem;
 
     @include mobile {
         flex-direction: column;
@@ -290,6 +289,7 @@ a{
     @include tablet{
         min-width: 450px;
         min-height: 450px;
+        padding: 1rem;
     }
 
     @include mobile{
@@ -361,6 +361,7 @@ a{
     @include mobile{
         position: unset;
         margin: unset;
+        margin-bottom: 1rem;
     }
 
 }
