@@ -16,6 +16,7 @@
     align-items: center;
     justify-content: space-between;
     position: relative;
+    padding: 2rem;
 
     @include mobile {
         flex-direction: column;
