@@ -100,7 +100,8 @@
 }
 
 #modal__message #finished-moves {
-  color: #43b047;
+  color: #fbd000;
+  font-size: 1.3rem;
 }
 
 #modal__message h1 {
