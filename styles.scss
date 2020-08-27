@@ -47,11 +47,23 @@
         align-items: center;
 
         #level-picker{
-            color: $blue;
+            width: 60%;
+            color: $black;
+            border: 2px solid $green;
+            padding: 5px 10px;
+            margin-top: 1rem;
+            background-color: white;
+            text-align: center;
         }
 
         #level-picker2{
-            color: $yellow;
+            width: 60%;
+            color: $black;
+            border: 2px solid $green;
+            padding: 5px 10px;
+            margin-top: 1rem;
+            background-color: white;
+            text-align: center;
         }
 
         #finished-moves{
@@ -285,6 +297,7 @@ a{
     align-items: center;
     perspective: 1000px;
     z-index: 1;
+    padding-right: 1rem;
 
     @include tablet{
         min-width: 450px;
