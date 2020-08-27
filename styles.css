@@ -207,6 +207,7 @@ button:focus {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  margin-bottom: 3rem;
 }
 
 .homepage__wrd-1 {
