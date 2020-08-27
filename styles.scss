@@ -26,9 +26,12 @@
     display: none;
     position: absolute;
     background-color: white;
-    width: 300px;
-    height: 300px;
-    right: 500px;
+    width: 80%;
+    height: 80%;
+    right: 5rem;
+    z-index: 2;
+    background-image: linear-gradient(rgba(#323232, 0.5),rgba(#323232, 0.5)),url("./img/mariofinish.jpeg");
+    background-size: cover;
 }
 
 // sound button properties
@@ -229,6 +232,7 @@ a{
     justify-content: center;
     align-items: center;
     perspective: 1000px;
+    z-index: 1;
 
     @include tablet{
         min-width: 450px;

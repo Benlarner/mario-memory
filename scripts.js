@@ -20,10 +20,15 @@ const music = document.getElementById('music');
 const soundButton = document.getElementById('sound-button');
 const muteButton = document.getElementById('mute-button')
 const booLaugh = document.getElementById('boo-laugh');
+const modal = document.getElementById('modal');
 
 // Move counter
 const counter = document.getElementById('counter');
 let moves = 0;
+
+// Correct counter
+
+let correctCounter = 0;
 
 
 // play sound function
@@ -100,7 +105,10 @@ function disableCards(){
     resetBoard();
     setTimeout(() => {
         correct.play();
+        correctCounter ++;
+        console.log(correctCounter);
         moveCounter();
+        trigModal();
     }, 100)
 }
 
@@ -119,6 +127,15 @@ function unflipCards(){
     }, 500)
     
 }
+// trigger modal
+function trigModal(){
+    if (correctCounter === cards.length / 2){
+        modal.style.display = "unset";
+    }
+}
+
+
+
 
 // stop the same card from being able to match
 function resetBoard() {
