@@ -27,19 +27,57 @@
     background-color: white;
     width: 80%;
     height: 80%;
-    right: 12rem;
+    right: 8rem;
     z-index: 2;
     background-image: linear-gradient(rgba(#323232, 0.5),rgba(#323232, 0.5)),url("./img/mariofinish.jpeg");
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
+    justify-content: space-around;
     max-width: 1000px;
+    font-family: $norm-font;
+
+
+    &__message{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        #level-picker{
+            color: $blue;
+        }
+
+        #level-picker2{
+            color: $yellow;
+        }
+
+        #finished-moves{
+            color: $green;
+        }
+
+        h1{
+            color: $red;
+            text-decoration: underline;
+            padding: 5px;
+        }
+
+        @include mobile{
+            width: 80%;
+            h1{
+                font-size: 20px;
+            }
+        }
+    }
 
     @include mobile{
+        height: 90%;
         right: unset;
         left: 4rem;
         top: 4rem;
+        flex-direction: column;
     }
 }
 

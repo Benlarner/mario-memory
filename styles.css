@@ -42,7 +42,7 @@
   background-color: white;
   width: 80%;
   height: 80%;
-  right: 12rem;
+  right: 8rem;
   z-index: 2;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(50, 50, 50, 0.5)), to(rgba(50, 50, 50, 0.5))), url("./img/mariofinish.jpeg");
   background-image: linear-gradient(rgba(50, 50, 50, 0.5), rgba(50, 50, 50, 0.5)), url("./img/mariofinish.jpeg");
@@ -56,14 +56,66 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   max-width: 1000px;
+  font-family: "glori-reg";
+}
+
+#modal__message {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#modal__message #level-picker {
+  color: #049cd8;
+}
+
+#modal__message #level-picker2 {
+  color: #fbd000;
+}
+
+#modal__message #finished-moves {
+  color: #43b047;
+}
+
+#modal__message h1 {
+  color: #e52521;
+  text-decoration: underline;
+  padding: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+  #modal__message {
+    width: 80%;
+  }
+  #modal__message h1 {
+    font-size: 20px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
   #modal {
+    height: 90%;
     right: unset;
     left: 4rem;
     top: 4rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
