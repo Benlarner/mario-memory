@@ -148,7 +148,7 @@ function trigModal(){
         modal.style.display = "flex";
         finishedMoves.innerText = `You completed the game in ${moves} moves!`;
     } else {
-        modal.style.display = "none";
+        // modal.style.display = "none";
     }
 }
 

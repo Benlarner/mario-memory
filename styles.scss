@@ -66,6 +66,11 @@
             text-align: center;
         }
 
+        #level-picker:hover, #level-picker2:hover{
+            color: $yellow;
+            background-color: $blue;
+        }
+
         #finished-moves{
             color: $yellow;
             font-size: 1.3rem;

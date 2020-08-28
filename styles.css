@@ -99,6 +99,11 @@
   text-align: center;
 }
 
+#modal__message #level-picker:hover, #modal__message #level-picker2:hover {
+  color: #fbd000;
+  background-color: #049cd8;
+}
+
 #modal__message #finished-moves {
   color: #fbd000;
   font-size: 1.3rem;
