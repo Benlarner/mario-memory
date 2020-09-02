@@ -154,7 +154,6 @@ function trigModal(){
 
 
 
-
 // stop the same card from being able to match
 function resetBoard() {
     [hasFlippedCard, cardLock] = [false, false];
