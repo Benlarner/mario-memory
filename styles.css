@@ -34,8 +34,9 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 90vh;
-    width: 80%;
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
   }
 }
 
@@ -404,8 +405,8 @@ a {
 
 @media only screen and (max-width: 768px) {
   .memory-game {
-    width: 100vw;
-    height: 100%;
+    width: 350px;
+    height: 350px;
   }
 }
 
