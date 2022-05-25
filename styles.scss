@@ -19,6 +19,7 @@
 
     @include mobile {
         flex-direction: column;
+        height: 90vh;
     }
 }
 
@@ -114,6 +115,8 @@ button{
     background-color: $yellow;
     color: $black;
 }
+
+
 
 
 button:focus {outline:0;};
