@@ -20,6 +20,7 @@
     @include mobile {
         flex-direction: column;
         height: 90vh;
+        width: 80%;
     }
 }
 
@@ -317,8 +318,8 @@ a{
     }
 
     @include mobile{
-        width: 350px;
-        height: 350px;
+        width: 100vw;
+        height: 100%;
     }
 }
 
